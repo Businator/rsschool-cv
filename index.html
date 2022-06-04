@@ -4,46 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/css/normalize.css">
+		<link rel="stylesheet" href="/css/style.css">
     <title>CV</title>
 </head>
+
 <body>
 	<div class="container">
 		<header class="header">
 			<nav class="header__nav">
 				<ul class="header__list">
 					<li class="header__item">
-						<a href="" class="header__item">
-							About Me
+						<a href="#section-me" class="header__link">
+							<p class="header__description">
+								About Me
+							</p>
 						</a>
 					</li>
-					<li class="header__li">
-						<a href="" class="header__item">
-							Contacts
+					<li class="header__item">
+						<a href="#section-education" class="header__link">
+							<p class="header__description">
+								Education
+							</p>
 						</a>
 					</li>
-					<li class="header__li">
-						<a href="" class="header__item">
-							Education
+					<li class="header__item">
+						<a href="#section-skills" class="header__link">
+							<p class="header__description">
+								Skills
+							</p>
 						</a>
 					</li>
-					<li class="header__li">
-						<a href="" class="header__item">
-							Skills
+					<li class="header__item">
+						<a href="#section-code" class="header__link">
+							<p class="header__description">
+								Code
+							</p>
 						</a>
 					</li>
-					<li class="header__li">
-						<a href="" class="header__item">
-							Code
+					<li class="header__item">
+						<a href="#section-projects" class="header__link">
+							<p class="header__description">
+								Projects
+							</p>
 						</a>
 					</li>
-					<li class="header__li">
-						<a href="" class="header__item">
-							Projects
-						</a>
-					</li>
-					<li class="header__li">
-						<a href="" class="header__item">
-							Languages
+					<li class="header__item">
+						<a href="#section-languages" class="header__link">
+							<p class="header__description">
+								Languages
+							</p>
 						</a>
 					</li>
 				</ul>
@@ -52,44 +62,57 @@
 	
 		<main class="main">
 			<section class="section-hero">
-				<h1 class="hero__header">
-					Marat Deniullov
-				</h1>
-				<p class="hero__position">
-					Future Frontend Developer
-				</p>
 				<img src="/img/Me.JPG" alt="It's me on this picture" class="hero__img">
+				<div class="hero__name">
+					<h1 class="hero__header">
+						Marat Deniullov
+					</h1>
+					<p class="hero__position">
+						Future Frontend Developer
+					</p>
+					<ul class="contacts__list">
+						<li class="contacts__item">
+							Adress:
+							<a href="https://goo.gl/maps/WLy2UWaYUhq1xYmd8" target="_blank" class="conacts_link"> 
+								<img src="/img/Google_Maps_icon_(2020).svg.png" alt="Google_Maps_icon" class="contacts__img"> Togliatti, Russia	
+							</a>	
+						</li>
+						<li class="contacts__item">
+							Telegram: 
+							<a href="https://telegram.im/@Businator163" target="_blank" class="conacts_link">
+								<img src="/img/Telegram_2019_Logo.svg.png" alt="Telegram_2019_Logo" class="contacts__img"> @Businator163
+							</a>
+						</li>
+						<li class="contacts__item">
+							Discord:
+							<a href="https://discordapp.com/users/Businator#0892" target="_blank" class="conacts_link">
+								<img src="/img/discor.png" alt="discord logo" class="contacts__img"> @Businator
+							</a> 
+						</li>
+						<li class="contacts__item">
+							E-mail: 
+							<a href="mailto:deniullov@gmail.com" target="_blank" class="conacts_link">
+								<img src="/img/Gmail_Logo_256px.png" alt="Gmail_Logo_256px" class="contacts__img">
+								deniullov@gmail.com
+							</a> 
+						</li>
+					</ul>
+				</div>
+					
 			</section>
 			
-			<section class="section-me">
-				<h2 class="me__header">
+			<section class="section-me" id="section-me">
+				<h2 class="me__header section-header">
 					About Me
 				</h2>
 				<p class="me__description">
-					Hello World!
+					Hello World! <br>
 					I studied at the Nizhny Novgorod Academy of the Ministry of Internal Affairs of the Russian Federation. After graduating from the Academy in 2018, I entered the service as an investigator for the investigation of crimes committed using IT technologies. I play airsoft, ride a bike, do active trekking. Since February 2022, I began to study Frontend development. June 1, 2022 became a student of The Rolling Scopes School.
 				</p>
 			</section>
 
-			<section class="section-contacts">
-				<h2 class="contacts__header">
-					Contacts
-				</h2>
-				<ul class="contacts__list">
-					<li class="contacts__item">
-						Telegram: @Businator
-					</li>
-					<li class="contacts__item">
-						Discord: @Businator
-					</li>
-					<li class="contacts__item">
-						E-mail: deniullov@gmail.com
-					</li>
-				</ul>
-			</section>
-
-			<section class="section-education">
-				<h2 class="education__header">
+			<section class="section-education" id="section-education">
+				<h2 class="education__header section-header">
 					Education
 				</h2>
 				<ul class="education__list">
@@ -97,37 +120,42 @@
 						Nizhny Novgorod Academy of the Ministry of Internal Affairs of the Russian Federation
 					</li>
 					<li class="education__item">
-						Rolling Scopes School
+						Rolling Scopes School: "JavaScript/Front-end. Stage 0"
 					</li>
 				</ul>
 			</section>
 
-			<section class="section-skills">
-				<h2 class="skills__header">
+			<section class="section-skills" id="section-skills">
+				<h2 class="skills__header section-header">
 					Skills
 				</h2>
 				<ul class="skills__list">
 					<li class="skills__item">
+						<img src="/img/HTML5_logo_and_wordmark.svg" alt="">
 						HTML5
 					</li>
 					<li class="skills__item">
+						<img src="/img/CSS3_logo_and_wordmark.svg" alt="">
 						CSS3
 					</li>
 					<li class="skills__item">
+						<img src="/img/js-logo.webp" alt="">
 						JavaScripts Basics
 					</li>
 					<li class="skills__item">
+						<img src="/img/Git-Icon-1788C.png" alt="">
 						GIT
 					</li>
 					<li class="skills__item">
+						<img src="/img/adobe-photoshop-logo-free-vector.webp" alt="">
 						Adobe Photoshop
 					</li>
 				</ul>
 			</section>
 
-			<section class="section-code">
-				<h2 class="code__header">
-					Code
+			<section class="section-code" id="section-code">
+				<h2 class="code__header section-header">
+					Code Example
 				</h2>
 				<code class="code__example">
 					function multiply(a, b){
@@ -136,24 +164,49 @@
 				</code>
 			</section>
 
-			<section >
-				<h2>
+			<section class="section-projects" id="section-projects">
+				<h2 class="projects__header section-header">
 					Projects
 				</h2>
+				<ul class="projects__list">
+					<li class="projects__item">
+						<a href="https://Businator.github.io/hotels/" class="projects__link">
+							Hotels
+						</a>
+					</li>
+					<li class="projects__item">
+						<a href="https://github.com/Businator/rsschool-cv" class="projects__link">
+							CV
+						</a>
+					</li>
+				</ul>
 			</section>
 
-			<section>
-				<h2>
+			<section class="section-languages" id="section-languages">
+				<h2 class="languages__header section-header">
 					Languages
 				</h2>
-				
+				<ul class="languages__list">
+					<li class="languages__item">
+						Russia - native
+					</li>
+					<li class="languages__item">
+						English - A2
+					</li>
+				</ul>
 			</section>
 		</main>
 	
-		<footer>
-			<a href="https://github.com/Businator">GitHub</a>
-			<p>2022</p>
-			<img src="" alt="RS_school">
+		<footer class="footer">
+			<a href="https://github.com/Businator" class="footer__git">
+				GitHub
+			</a>
+			<p class="footer__year">
+				2022
+			</p>
+			<a href="" class="footer__rs">
+				https://rs.school/
+			</a>
 		</footer>
 	</div>
 </body>

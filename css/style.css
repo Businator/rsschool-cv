@@ -9,6 +9,7 @@
 
 html {
 	background: #222222
+	scroll-behavior: smooth;
 }
 
 a {
